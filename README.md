@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Habit-Tracker
 A simple web application to track your Daily Habits 💪 Habits-Tracker.
 =======
@@ -125,6 +124,3 @@ This code follows MVC pattern and hence everything is differentiated and well ma
 4) View past tracking data for each habit by clicking on the habit name.
 5) Edit or delete habits by clicking on the "Edit" or "Delete" button.
 ```
-
-
->>>>>>> 95e487a (H-Tracker v1.0)
