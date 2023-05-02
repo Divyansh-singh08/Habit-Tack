@@ -1,0 +1,84 @@
+@charset "UTF-8";
+.navigation {
+  height: 70px;
+  background: #468490c6;
+  box-shadow: #b1f663 0px 10px 8px, rgba(50, 204, 76, 0.955) 0px -4px 10px, #2c4f5d 0px 8px 6px, #41eb23 0px 8px 7px, #4162ab 0px -8px 5px;
+  animation: btnm 1s ease infinite;
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+  top: 0; }
+  .navigation #logo {
+    padding-left: 6vw;
+    float: left;
+    line-height: 80px;
+    font-size: 1.4em; }
+    .navigation #logo img {
+      height: 25px;
+      animation: icon 2s ease-in infinite; }
+    .navigation #logo a {
+      text-decoration: none;
+      color: #59ff00; }
+
+@keyframes icon {
+  0% {
+    height: 20px; }
+  25% {
+    height: 21px; }
+  50% {
+    height: 22px; }
+  75% {
+    height: 23px; }
+  100% {
+    height: 25px; } }
+      .navigation #logo a span {
+        font-size: 22px;
+        padding-left: 10px;
+        font-weight: 900;
+        letter-spacing: 2px; }
+      .navigation #logo a span:hover {
+        color: #0b0b0b; }
+
+@keyframes btnm {
+  0% {
+    box-shadow: rgba(29, 53, 72, 0.882) 0px 10px 8px, rgba(45, 42, 42, 0.955) 0px -4px 10px, #192e4c 0px 8px 6px, #5280e4 0px 8px 7px, #1f1313 0px -8px 5px; }
+  25% {
+    box-shadow: #f19010 0px 10px 8px, rgba(44, 23, 69, 0.955) 0px -4px 10px, #3a8af9 0px 18px 6px, #5e1731 0px 18px 7px, #ccc1c1 0px -12px 5px; }
+  50% {
+    box-shadow: #0ad6d3 0px 10px 8px, rgba(240, 231, 231, 0.955) 0px -4px 10px, #c5d861 0px 8px 6px, #2c2c2a 0px 8px 7px, #689182 0px -8px 5px; }
+  100% {
+    box-shadow: red 0px 10px 8px, rgba(153, 50, 50, 0.955) 0px -4px 10px, #13c77c 0px 8px 6px, #8d9bb8 0px 8px 7px, #5f3260 0px -8px 5px; } }
+
+nav {
+  float: right;
+  margin-right: 1.2vw; }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+    nav ul li {
+      float: left;
+      position: relative; }
+      nav ul li a {
+        display: block;
+        padding: 10px 6px 0 6px;
+        line-height: 60px;
+        font-size: 20px;
+        text-decoration: none;
+        color: black; }
+        nav ul li a::before {
+          transition: 300ms;
+          height: 5px;
+          content: "";
+          position: absolute;
+          background-color: #24620b;
+          width: 0%;
+          bottom: 0px; }
+        nav ul li a:hover::before {
+          width: 70%; }
+        nav ul li a:not(:only-child):after {
+          padding-left: 4px;
+          content: ' ▾'; }
+      nav ul li a:hover {
+        color: rgba(49, 252, 46, 0.921); }

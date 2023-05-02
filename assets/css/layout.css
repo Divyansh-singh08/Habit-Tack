@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #2a2d48;
+  height: 100vh; }
+
+body::-webkit-scrollbar {
+  display: none; }

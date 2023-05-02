@@ -1,0 +1,104 @@
+.navigation {
+    height: 70px;
+    background: #468490c6;
+    box-shadow: rgb(177, 246, 99) 0px 10px 8px, 
+    rgba(50, 204, 76, 0.955) 0px -4px 10px, rgb(44, 79, 93) 0px 8px 6px, 
+    rgb(65, 235, 35) 0px 8px 7px, rgb(65, 98, 171) 0px -8px 5px;
+    animation: btnm 1s ease infinite;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+    top: 0;
+    #logo{
+        padding-left: 6vw;
+        float: left;
+        line-height: 80px;
+        font-size: 1.4em;
+        img{
+          height: 25px;
+          animation: icon 2s ease-in infinite;
+        }
+        a{ 
+          text-decoration: none;
+          color: rgb(89, 255, 0);
+          @keyframes icon {
+            0%   {height: 20px;}
+            25%  {height: 21px}
+            50%  {height: 22px}
+            75%  {height: 23px}
+            100% {height: 25px}
+          }
+          span {
+            font-size: 22px;
+            padding-left: 10px;
+            font-weight: 900;
+            letter-spacing: 2px;
+          }
+          span:hover {
+            color: rgb(11, 11, 11);
+          }
+        }
+    }
+    @keyframes btnm {
+      0%   {box-shadow: rgba(29, 53, 72, 0.882) 0px 10px 8px, 
+        rgba(45, 42, 42, 0.955) 0px -4px 10px, rgb(25, 46, 76) 0px 8px 6px, 
+        rgb(82, 128, 228) 0px 8px 7px, rgb(31, 19, 19) 0px -8px 5px;}
+
+        25%  {box-shadow: rgb(241, 144, 16) 0px 10px 8px, 
+          rgba(44, 23, 69, 0.955) 0px -4px 10px, rgb(58, 138, 249) 0px 18px 6px, 
+          rgb(94, 23, 49) 0px 18px 7px, rgb(204, 193, 193) 0px -12px 5px;}
+
+      50% {box-shadow: rgb(10, 214, 211) 0px 10px 8px, 
+        rgba(240, 231, 231, 0.955) 0px -4px 10px, rgb(197, 216, 97) 0px 8px 6px, 
+        rgb(44, 44, 42) 0px 8px 7px, rgb(104, 145, 130) 0px -8px 5px;}
+
+        100%   {box-shadow: rgb(255, 0, 0) 0px 10px 8px, 
+          rgba(153, 50, 50, 0.955) 0px -4px 10px, rgb(19, 199, 124) 0px 8px 6px, 
+          rgb(141, 155, 184) 0px 8px 7px, rgb(95, 50, 96) 0px -8px 5px;}
+    }
+  }
+
+  nav {
+    float: right;
+    margin-right: 1.2vw;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      li {
+        float: left;
+        position: relative;
+        a {
+          display: block;
+          padding: 10px 6px 0 6px;
+          line-height: 60px;
+          font-size: 20px;
+          text-decoration: none;
+          color: black;
+          
+           &::before {
+             transition: 300ms;
+             height: 5px;
+             content: "";
+             position: absolute;
+             background-color: rgb(36, 98, 11);
+             width: 0%;
+             bottom: 0px;
+          }
+  
+          &:hover::before{
+            width: 70%;
+          }
+          &:not(:only-child):after {
+            padding-left: 4px;
+            content: ' ▾';
+          }
+        } 
+        a:hover{
+          color: rgba(49, 252, 46, 0.921);
+        }
+      }
+    }
+  }
+  

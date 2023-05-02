@@ -1,0 +1,44 @@
+
+<!-- Habit data showing  -->
+<link rel="stylesheet" href="/css/details.css" type="text/css">
+
+<section class="details">
+    <a href="/user/home " class="back"><button><i class="fa-solid fa-arrow-left">Back</i></button></a>
+    <div class="details-status">
+        <h2 class="name">🏋️ <%= all_habits.name %></h2>
+        <div class="habit-track">
+            <% let a = 1 %>
+            <% for(let i = (all_habits.tracking.length - 1); i >= 0; i--){ %>
+                <% if(a == 7){ break; } %>
+                <% a++; %>
+                <div class="track-box">
+                    <p><%= all_habits.tracking[i].date %></p>
+                    <form action="/update/<%= all_habits._id %>/<%= all_habits.tracking[i]._id %>" method="POST"></form>
+                    <% if(all_habits.tracking[i].status === 'none') { %>
+                        <select name="status" class="status" value="None" style="background-color: rgb(16, 175, 255); color: rgb(1, 10, 18);">
+                            <option value="none" style="background-color: rgb(255, 230, 0);">None</option>
+                            <option value="done" style="background-color: rgb(8, 235, 8);">Done</option>
+                            <option value="not done" style="background-color: red;">Not Done</option>
+                          </select>
+                    <% } %>
+                    <% if(all_habits.tracking[i].status === 'done') { %>
+                        <select name="status" class="status" value="Done" style="background-color: rgb(16, 175, 255); color: rgb(1, 10, 18);">
+                            <option value="done" style="background-color: rgb(8, 235, 8);">Done</option>
+                            <option value="none" style="background-color: rgb(255, 230, 0);">None</option>
+                            <option value="not done" style="background-color: red;">Not Done</option>
+                          </select>
+                    <% } %>
+                    <% if(all_habits.tracking[i].status === 'not done') { %>
+                        <select name="status" class="status" value="Not Done" style="background-color: rgb(16, 175, 255); color: rgb(1, 10, 18);">
+                            <option value="not done" style="background-color: red;">Not Done</option>
+                            <option value="none" style="background-color: rgb(255, 230, 0);">None</option>
+                            <option value="done" style="background-color: rgb(8, 235, 8);">Done</option>
+                          </select>
+                    <% } %>
+                    <button type="submit" class="status-btn"><i class="fa fa-thumbs-up"></i></button>
+                    </form>
+                </div>
+            <% } %>   
+        </div>
+    </div>
+</section>

@@ -1,0 +1,31 @@
+<!-- signIn page -->
+<link rel="stylesheet" href="/css/signIn.css" type="text/css">
+
+<div class="sign-in">
+    <div class="container">
+        <div class="text">
+            Sign-In Form
+        </div>
+        <form action="/user/session" method="POST">
+            <div class="data">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required />
+            </div>
+            <div class="data">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter your Password" required />
+            </div>
+            <div class="btn">
+                <div class="inner"></div>
+                <button type="submit"><span>Login</span></button>
+            </div>
+            <div class="signup-link">
+                Not a member?
+                <a href="/user/signUp">
+                    Sign-Up now
+                </a>
+            </div>
+        </form>
+    </div>
+
+</div>

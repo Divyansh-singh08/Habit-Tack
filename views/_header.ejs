@@ -1,0 +1,36 @@
+<section class="navigation">
+    <div id="logo">
+        <a href="/user/home"><span>👣 H-Tracker</span></a>
+    </div>   
+    <nav>
+        <ul class="nav-list">
+            <% if(locals.user){ %>
+                <li>
+                    <a href="#">
+                        <%= user.name %>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/user/sign-out">
+                        SignOUT
+                    </a>
+                </li>
+                
+            <% }else{ %>
+                
+                    <li>
+                        <a href="/user/signIn">
+                            SignIN
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="/user/signUp">
+                            SignUP
+                        </a>
+                    </li>
+            <% } %>
+        </ul>
+      </nav>
+    </section>

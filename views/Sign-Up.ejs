@@ -1,0 +1,38 @@
+<!-- SignUp form -->
+<link rel="stylesheet" href="/css/signUp.css" type="text/css">
+
+<div class="sign-up">
+    <div class="container">
+        <div class="text">
+            Sign-Up Form
+        </div>
+        <form action="/user/create" method="POST">
+            <div class="data">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email Address" required>
+            </div>
+            <div class="data">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="data">
+                <label for="password">Confirm-Password</label>
+                <input type="password" name="Confirm_password" id="password" placeholder="Enter Your password" required>
+            </div>
+            <div class="data">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="btn">
+                <div class="inner"></div>
+                <button type="submit"><span>Sign-Up</span></button>
+            </div>
+            <div class="signup-link">
+                Already have account ! 
+                <a href="/user/signIn">
+                Sign-In now
+                </a>
+            </div>
+        </form>
+    </div>
+</div>

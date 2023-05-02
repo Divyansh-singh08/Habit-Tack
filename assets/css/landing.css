@@ -1,0 +1,73 @@
+.landing-Page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+  .landing-Page .landing-container {
+    background-color: #236475;
+    width: 29vw;
+    min-width: 380px;
+    height: 62vh;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .landing-Page .landing-container p {
+      font-weight: 800;
+      font-size: 30px;
+      letter-spacing: 2px;
+      color: #e8fd81; }
+    .landing-Page .landing-container img {
+      height: 95px;
+      margin-bottom: 20px; }
+    .landing-Page .landing-container a {
+      width: 60%;
+      margin-top: 17px; }
+      .landing-Page .landing-container a button {
+        width: 100%;
+        position: relative;
+        height: 30px;
+        border: 3px ridge #484741;
+        outline: none;
+        background-color: #6efd67;
+        color: #7b369e;
+        transition: 1s;
+        border-radius: 0.3em;
+        font-size: 16px;
+        font-weight: bold; }
+      .landing-Page .landing-container a .auth {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        color: #171717;
+        background-color: rgba(81, 105, 199, 0.31);
+        gap: 10px;
+        border-radius: 2rem;
+        border: none; }
+        .landing-Page .landing-container a .auth img {
+          height: 26px;
+          margin-top: 20px; }
+      .landing-Page .landing-container a button::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 3%;
+        width: 100%;
+        height: 30%;
+        transition: 0.15s;
+        transform-origin: center; }
+      .landing-Page .landing-container a button::before {
+        content: "";
+        transform-origin: center;
+        position: absolute;
+        top: 80%;
+        left: 3%;
+        width: 100%;
+        height: 40%;
+        transition: 0.15s; }
+      .landing-Page .landing-container a button:hover::before, .landing-Page .landing-container a button:hover::after {
+        transform: scale(0); }
+      .landing-Page .landing-container a button:hover {
+        box-shadow: inset 0px 0px 25px #002aff; }
