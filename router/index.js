@@ -1,7 +1,7 @@
 
 const express = require('express');
-const { landingPage } = require('../controllers/Home_controller');
-const {addHabit, removeHabit, details, updateStatus} = require('../controllers/Habit_controller');
+const { landingPage } = require('../controllers/Home_Controller');
+const {addHabit, removeHabit, details, updateStatus} = require('../controllers/Habit_Controller');
 
 const routers = express.Router();
 
