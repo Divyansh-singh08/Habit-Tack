@@ -8,7 +8,7 @@ passport.use(
 	new GoogleStrategy(
 		{
 			//we pass options
-			clientID: process.env.GOOGLE_CLIENT_ID,
+			clientID: '905541119790-t4hht1s4jfk1fbj41oenlrrksbbdp8hv.apps.googleusercontent.com',
 			clientSecret: process.env.GOOGLE_AUTH_KEY,
 			callbackURL: process.env.GOOGLE_CALLBACK_URL,
 		},
