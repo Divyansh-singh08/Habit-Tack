@@ -1,126 +1,36 @@
-# Habit-Tracker
-A simple web application to track your Daily Habits 💪 Habits-Tracker.
-=======
+# Cyclic - Express Hello World
 
-# 💪 H-Tracker(Habit Tracker)
-A simple web application to track your daily habits i.e. 💪 H-Tracker.
+This is a basic starter Expressjs app with:
 
-## Authors
+- Static file hosting
+- Logging Middleware
+- Catch-all handler that echoes request info
 
-- [@Divyansh-singh08](https://github.com/Divyansh-singh08/Habit-Tracker)
+## Local Quick Start
 
-## Features
+- Clone to your local
+- Install dependencies `npm install`
+- Run locally `npm serve`
+- Make requests
+  - Browser: `http://localhost:3000/some/path?q=query+one&q=second+query&single=value`
+  - Command line: `curl -i -XGET "http://localhost:3000/cmd/line-curl"`
 
-- User authentication (signUp, logIn, logOut)
-- Add, edit, and delete habits
-- Track the status of your habits for the current day
-- View past tracking data for each habit
+## Deploy in under 10 seconds
 
+[![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://deploy.cyclic.app/)
+- Sets up instant continuous deployment on `git push`
+- Realtime backend logs and API request monitoring
 
-## Technologies Used
+### Cyclic Runtime
 
-- Node.js
-- Express.js
-- MongoDB
-- EJS
-- SCSS
+- Cyclic hosts your app on serverless infrastructure. That means there is no guarantee of memory or file system persistence between requests.
+- The runtime expects a nodejs entry point defined as:
+  - package.json "main" field defines the entry point file (if missing uses index.js)
+  - Entry point starts a server on `process.env.PORT`
 
+## Say Hi
 
-## Getting Started
+Ask a question or give us a shout out:
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-### Prerequisites
-- Node.js
-- MongoDB
-
-Clone the project
-
-```bash
-  git clone https://github.com/Divyansh-singh08/Habit-Tracker.git
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm start
-```
-
-Open your web browser and navigate to http://localhost:8000
-
-## Tech Stack
-
-**Client:** ejs, SCSS, ES6
-
-**Server:** Node, Express
-
-**DataBase:** MongoDB
-
-## Directory Structure and flow of The Code
-This code follows MVC pattern and hence everything is differentiated and well managed:
-
-    Habit-tracker
-        |-----assets
-        |       |--- css
-        |             |-- details.css
-        |             |-- header.css
-        |             |-- home.css
-        |             |-- landing.css
-        |             |-- layout.css
-        |             |-- signIn.css
-        |             └-- signUp.css
-        |       |--- js
-        |       |     
-        |       |--- scss
-        |             |-- details.scss
-        |             |-- header.scss
-        |             |-- home.scss
-        |             |-- landing.scss
-        |             |-- layout.scss
-        |             |-- signIn.scss
-        |             └-- signUp.scss
-        |------ config
-        |         |--- flash.js
-        |         |--- git-Auth.js
-        |         |--- google-Auth.js
-        |         |--- mongoose.js
-        |         └--- passport.js
-        |------ controllers
-        |         |--- Habit_controller.js
-        |         |--- Home_controller.js
-        |         └--- User_controller.js
-        |------ models
-        |         |--- habit.js
-        |         └--- user.js
-        |------ routers
-        |         |--- index.js
-        |         └--- user.js
-        |------ views
-        |         |--- _header.ejs
-        |         |--- haditData.ejs
-        |         |--- home.ejs
-        |         |--- landingPage.ejs
-        |         |--- layout.ejs
-        |         |--- Sign-In.ejs
-        |         └--- Sing-Up.ejs
-        |------ .gitignore
-        |------ index.js
-        |------ package.json
-        |------ package-lock.json
-        └------ README.md
-
-## Usage
-
-```javascript
-1) Sign up for an account or log in if you already have one.
-2) Add a new habit by clicking on the "Add Habit" button and filling in the form.
-3) Track the status of your habits for the current day by clicking on the "Mark as Done" or "Mark as Not Done" button.
-4) View past tracking data for each habit by clicking on the habit name.
-5) Edit or delete habits by clicking on the "Edit" or "Delete" button.
-```
+- 💌 hello@cyclic.sh
+- 🐣 https://twitter.com/cyclicsoftware

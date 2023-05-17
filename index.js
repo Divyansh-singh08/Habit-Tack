@@ -47,6 +47,13 @@ app.use(
 
 //css files connect
 app.use(express.static(path.join(__dirname, "assets")));
+// app.get("/", function (_, res) {
+// 	res.sendFile(path.join(__dirname, ""), function (err) {
+// 		if (err) {
+// 			res.status(500).send(err);
+// 		}
+// 	});
+// });
 
 //layouts in your views
 app.use(expressLayouts);
@@ -68,7 +75,7 @@ const MongoStore = require("connect-mongo");
 
 const store = MongoStore.create(
 	{
-		mongoUrl: "mongodb://127.0.0.1:27017/habits",
+		mongoUrl: process.env.MONGODB_URL,
 		autoRemove: "disabled",
 	},
 	(err) => {
