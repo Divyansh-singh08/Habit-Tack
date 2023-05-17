@@ -68,7 +68,7 @@ const MongoStore = require("connect-mongo");
 
 const store = MongoStore.create(
 	{
-		mongoUrl: "mongodb://127.0.0.1:27017/habits",
+		mongoUrl: "process.env.MONGODB_URL",
 		autoRemove: "disabled",
 	},
 	(err) => {
